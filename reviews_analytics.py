@@ -22,11 +22,18 @@ for d in data:
 print("there are", len(new), "comments which exceed 100 characters")
 print(new[0])
 
-good = []
-for d in data:
-	if "good" in d:
-		good.append(d)
+#good = []
+#for d in data:
+#	if "good" in d:
+#		good.append(d)
 
-print(len(good))
-print(good[5])
+good = [d for d in data if "good" in d]
+bad = ["bad" in d for d in data]
+
+print(len(bad))
+print(good[28])
+print(bad[8])
+
+#print(len(good))
+#print(good[5])
 
