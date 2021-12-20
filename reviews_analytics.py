@@ -14,3 +14,10 @@ for d in data:
 
 print('average length is', comment_len/len(data))
 
+new =[]
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+
+print("there are", len(new), "comments which exceed 100 characters")
+
